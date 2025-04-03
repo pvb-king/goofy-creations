@@ -1,0 +1,138 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        header{
+            margin-bottom: 200px;
+        }
+        .Text{
+            text-align: center;
+            border: none;
+            outline: none;
+            font-size: 40px;
+            transition: color 0.2s,font-size 0.2s,opacity 0.2s;
+            font-family: Roboto;
+            height: 100px;
+        }
+        .cont{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btns{
+            display: flex;
+            gap: 10px;
+        }
+        .btns button{
+            height: 40px;
+            width: 40px;
+            font-size : 20px;
+            background-color: rgb(215, 215, 215);
+            border: none;
+        }
+        .bold-it{
+            font-weight: bolder;
+        }
+ 
+        .italic-it{
+            font-style: italic;
+        }
+ 
+        .underline-it{
+            text-decoration: underline;
+        }
+        .opacity-it{
+            opacity: 0%;
+        }
+        .btns input{
+            height: 40px;
+            width: 40px;
+        }
+ 
+        .btns button:hover{
+            scale: 1.1;
+        }
+        .btns input:hover{
+            scale: 1.1;
+        }
+ 
+        .sizes {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;    
+            gap: 0;
+            margin: 0;  
+            border: none;  
+        }
+ 
+ 
+        .sizes button{
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+ 
+        .sizes button:hover{
+            scale: 1;
+            filter: invert();
+        }
+ 
+    </style>
+</head>
+<header>
+    <h1 style="text-align: center;">Text Editor</h1>
+</header>
+<body>
+<div class="cont">
+    <div class="">
+        <input type="text" placeholder="Enter any text" class="Text" value="Example Text" >
+    </div><br>
+    <div class="btns">
+        <button onclick="document.querySelector('.Text').classList.toggle('bold-it')" style="font-weight: bold;">B</button>
+        <button onclick="document.querySelector('.Text').classList.toggle('italic-it')" style="font-style: italic;">i</button>
+        <button onclick="document.querySelector('.Text').classList.toggle('underline-it')" style="text-decoration: underline;">U</button>
+        <button onclick="document.querySelector('.Text').classList.toggle('opacity-it')"></button>
+        <input type="color" class="colorPick">
+        <div class="sizes">
+            <button onclick="increase()" style="rotate: 90deg;"><</button>
+            <button onclick="decrease()" style="rotate: -90deg;padding-top: 2px;"><</button>
+        </div>
+    </div>
+</div>
+<script>
+    var color = document.querySelector('.colorPick');
+    var Texts = document.querySelector('.Text');
+    var fontsize = 40;
+    console.log(`${fontsize}`);
+    color.addEventListener('input',function(){
+        var color1 = color.value;
+        Texts.style.color = color1;
+    });
+ 
+    function increase(){
+        fontsize += 4 ;
+        Texts.style.fontSize = fontsize + 'px';
+    }
+ 
+    function decrease(){
+        fontsize -= 4 ;
+        Texts.style.fontSize = fontsize + 'px';
+    }
+ 
+</script>
+</body>
+</html>
