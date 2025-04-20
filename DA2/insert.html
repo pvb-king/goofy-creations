@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Student Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://vit.ac.in/sites/default/files/styles/slider_image/public/slider-image/Chennai1.jpg') no-repeat center center/cover;
+            color: black;
+        }
+
+        /* Navbar */
+        .top {
+            position: fixed;
+            top: 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            right: 0;
+            left: 0;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+            padding: 0 50px;
+            z-index: 1000;
+        }
+
+        /* Logo */
+        .lef img {
+            height: 80px;
+            cursor: pointer;
+        }
+
+        /* Navbar Links */
+        .rig {
+            display: flex;
+            gap: 50px;
+            font-size: 24px;
+        }
+
+        .rig a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .rig a:hover {
+            color: rgb(110, 185, 210);
+        }
+
+        /* Form Container */
+        .form-container {
+            margin: 150px auto;
+            height: auto;
+            width: 500px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px;  /* Increased padding for better spacing */
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: all 0.2s;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            font-size: 26px; /* Increased font size */
+        }
+
+        /* Input Fields */
+        .form-container input {
+            width: 100%;
+            padding: 12px;  /* More padding for better spacing */
+            margin: 12px 0;
+            border: 1px solid rgb(243, 243, 243);
+            border-radius: 5px;
+            font-size: 18px; /* Increased font size */
+        }
+
+        /* Submit Button */
+        .form-container button {
+            padding: 12px 25px;
+            background: rgb(110, 185, 210);
+            border: none;
+            color: white;
+            font-size: 20px; /* Increased font size */
+            cursor: pointer;
+            border-radius: 5px; 
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .form-container button:hover {
+            background: rgb(11, 150, 210);
+            width: 140px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="top">
+        <div class="lef"><a href="index.html"><img src="VIT-LOGO-removebg-preview.png" alt="VIT Logo"></a></div>
+        <div class="rig">
+            <i><a href="index.html">Home</a></i>
+            <i><a href="https://lms.vit.ac.in/login/index.php">LMS</a></i>
+            <i><a href="about.html">About</a></i>
+            <i><a href="insert.html">Insert</a></i>
+            <i><a href="view.html">View</a></i>
+            <i><a href="contact.html">Contact</a></i>
+        </div>
+    </div>
+
+    <!-- Insert Form -->
+    <div class="form-container">
+        <h2>Insert Student Details</h2>
+        <form>
+            <input type="text" placeholder="Register Number" required>
+            <input type="text" placeholder="Full Name" required>
+            <input type="number" placeholder="Age" required>
+            <input type="text" placeholder="Department" required>
+            <input type="email" placeholder="Email" required>
+            <input type="number" placeholder="Overall Attendance (%)" required>
+            <input type="text" placeholder="Grade" required>
+            <input type="number" step="0.01" placeholder="CGPA" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

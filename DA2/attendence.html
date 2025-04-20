@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Attendance</title>
+<style>
+body { 
+font-family: Arial, sans-serif; 
+text-align: center; 
+}
+input, button { 
+margin: 10px; 
+padding: 10px; 
+width: 80%; 
+border: 1px solid black; 
+border-radius: 5px; 
+}
+table { 
+width: 100%; 
+border-collapse: collapse; 
+margin-top: 20px; 
+}
+table, th, td { 
+border: 1px solid black; 
+}
+th, td { 
+padding: 10px; 
+text-align: left; 
+}
+.input-box { 
+display: block; 
+width: 50%; 
+margin: 10px auto; 
+padding: 10px; 
+}
+</style>
+</head>
+<body style="background-color:pink;">
+<h2>Attendance</h2>
+    
+<form action="process_attendance.php">
+<p>ENTER NAME OR REGISTER NUMBER SEARCH</p>
+<input type="text" name="search" class="input-box" >
+<button type="submit">Search</button>
+</form>
+    
+<table>
+<tr>
+<th>Name</th>
+<th>Register Number</th>
+<th>Date</th>
+<th>Subject</th>
+<th>Attendance Percentage</th>
+</tr>
+<!-- Data will be populated from the database -->
+</table>
+</body>
+</html>

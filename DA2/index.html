@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Chennai - Excellence in Education</title>
+    <style>
+        /* Full Page Background */
+        body {
+            background: url('https://vit.ac.in/sites/default/files/styles/slider_image/public/slider-image/Chennai1.jpg') no-repeat center center/cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: black;
+        }   
+
+        /* Navigation Bar */
+        .top {
+            position: fixed;
+            top: 0;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            right: 0;
+            left: 0;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+            padding: 0 50px;
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+
+        .top:hover{
+            height: 150px;
+        }
+
+        .top:hover body{
+            margin-top: 50px;
+        }
+
+        /* Logo */
+        .lef img {
+            height: 80px;
+            cursor: pointer;
+        }
+
+        /* Navbar Links */
+        .rig {
+            display: flex;
+            gap: 50px;
+            font-size: 24px;
+        }
+
+        .rig a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .rig a:hover {
+            color: rgb(110, 185, 210);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 220px;
+            left: 0;
+            bottom: 120px;
+            width: 300px; /* Adjust width */
+            background: rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar img {
+            width: 720px;
+            height: 300px;
+            transform: rotate(270deg);
+}
+
+
+        /* Main Content */
+        .container {
+            margin-top: 120px;
+            text-align: center;
+            padding: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .heading {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-text::first-letter {
+            font-size: 40px;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Campus Images */
+        .campus-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .campus-images img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .campus-images img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: black;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+        .sidebar-right {
+            position: fixed;
+            top: 220px;
+            right: 0;
+            bottom: 120px;
+            width: 300px;
+            background: rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar-right video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 0; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="top">
+        <div class="lef"><a href=""><img src="VIT-LOGO-removebg-preview.png" alt="VIT Logo"></a></div>
+        <div class="rig">
+            <i><a href="index.html">Home</a></i>
+            <i><a href="https://lms.vit.ac.in/login/index.php">LMS</a></i>
+            <i><a href="about.html">About</a></i>
+            <i><a href="insert.html">Insert</a></i>
+            <i><a href="view.html">View</a></i>
+            <i><a href="contact.html">Contact</a></i>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="Technovit Banner-2024091204.jpg" alt="Sidebar Image">
+    </div>
+
+    <div class="sidebar-right">
+        <video autoplay muted loop>
+            <source src="vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="heading">Welcome to VIT Chennai</div>
+        <p class="about-text">
+            VIT Chennai is a world-class institution that has consistently been ranked among the top private universities in India. 
+            With a focus on academic excellence, research innovation, and holistic student development, VIT Chennai offers a dynamic learning 
+            environment that fosters creativity, critical thinking, and leadership skills.
+            <br><br>
+            The university provides a diverse range of undergraduate, postgraduate, and doctoral programs in various fields such as Engineering, 
+            Business, Law, and Applied Sciences. The state-of-the-art infrastructure, advanced laboratories, and industry partnerships 
+            make VIT Chennai a hub for innovation and cutting-edge research.
+            <br><br>
+            Beyond academics, VIT Chennai is known for its vibrant campus life. Students engage in various clubs, cultural activities, 
+            sports events, and technical fests like GraVITas and Riviera, which bring together young minds from across the country. 
+            The university also has strong placement records, with leading companies such as Microsoft, Amazon, and TCS recruiting students 
+            year after year.
+            <br><br>
+            Whether you're an aspiring engineer, entrepreneur, scientist, or artist, VIT Chennai offers the perfect platform to 
+            nurture your dreams and build a successful career.
+            environment that fosters creativity, critical thinking, and leadership skills.
+        </p>
+
+        <!-- Campus Images -->
+        <div class="campus-images">
+            <img src="Dean.jpeg" alt="VIT Event">
+            <img src="campus.jpg" alt="VIT Campus">
+            <img src="vibrance.jpg" alt="VIT Riviera Fest">
+        </div>
+
+        <!-- Why Choose VIT Chennai? -->
+        <div class="section">
+            <h2>Why Choose VIT Chennai?</h2>
+            <p>VIT Chennai stands out due to its exceptional faculty, advanced research facilities, and global exposure.</p>
+            <ul>
+                <li>🧑‍🏫 Highly Qualified Professors</li>
+                <li>🏆 Ranked Among Top Universities in India</li>
+                <li>💡 Innovation & Research Centers</li>
+                <li>🌏 International Exchange Programs</li>
+            </ul>
+        </div>
+
+        <!-- Programs Offered -->
+        <div class="section">
+            <h2>Programs Offered</h2>
+            <p>VIT Chennai offers a variety of programs across different disciplines:</p>
+            <ul>
+                <li>🎓 B.Tech in Computer Science, EEE, ECE, Mechanical & More</li>
+                <li>🖥️ BSc Computer Science</li>
+                <li>👗 BSc Fashion Designing</li>
+                <li>💼 MBA & Business Analytics</li>
+                <li>⚖️ Law & Humanities</li>
+                <li>🔬 M.Tech & Research Programs</li>
+            </ul>
+        </div>
+
+        <!-- Recruiters & Placements -->
+        <div class="section">
+            <h2>Recruiters & Placements</h2>
+            <p>Top companies recruit from VIT Chennai every year:</p>
+            <ul>
+                <li>💻 Microsoft, Google, Amazon</li>
+                <li>🏦 Deloitte, Goldman Sachs</li>
+                <li>📡 TCS, Infosys, Wipro</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        📍 VIT Chennai | Contact: info@vit.ac.in | 📞 +91 44 3993 1555
+    </div>
+
+</body>
+</html>
