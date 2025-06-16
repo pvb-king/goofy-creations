@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="fullScore">
+            <span style="color: greenyellow;" class="wins">
+                Wins : <span id="winCount">0</span>
+            </span>
+            <span style="color: rgb(230, 230, 230);" class="draws">
+                Draws : <span id="drawCount">0</span>
+            </span>
+            <span style="color: red;" class="losses">
+                Losses : <span id="lossCount">0</span>
+            </span>
+        </div>
+        <div class="headers">
+            <h1>ROCK <br>PAPER <br>SCISSORS</h1>
+            <div class="score" title="reset!?" onclick="highscore=0;document.querySelector('.highscoreNumber').innerHTML=highscore">
+                <p class="scoreText" style="color: rgb(35, 145, 255);">
+                    HIGH-SCORE
+                </p>
+                <p class="highscoreNumber">
+                    0
+                </p>
+    
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="ScoreBoard">
+        <div class="roundDetails">Round - 0 </div>
+        <div class="difficulty">
+            <button onclick="setDifficulty('easy')" class="easyMode">Easy</button>
+            <button onclick="setDifficulty('medium')" class="midMode">Medium</button>
+            <button onclick="setDifficulty('hard')" class="hardMode">Hard</button>
+        </div>
+         
+    </div>
+    <div class="mainContainer">
+        
+        <div class="userMoveDiv">  
+            <span class="userMove">: Your Move : <br><span class="userMoveJS">nada</span></span>
+            <br>
+            <span class="userScore">0 </span>
+        </div>
+        
+        
+        <div class="moveButtons">
+            <div class="rows">
+                <button onclick='play("rock")' title="ROCK" style="border: solid 20px rgb(107, 193, 20);">Rock</button>
+                <button onclick='play("paper")' title="PAPER" style="border: solid 20px rgb(175, 7, 7);">Paper</button>
+            </div>
+            <div class="rows">
+                <button onclick='play("scissor")' title="SCISSORS" style="border: solid 20px rgb(255, 217, 0);">Scissor</button>
+            </div>
+        </div>
+
+        <div class="computerMoveDiv">
+            <span class="computerMove">: Computer Move : <br>
+                <span class="computerMoveJS">nada</span>
+            </span>
+            <br>
+            <span class="computerScore">0 </span>
+        </div>
+    </div>
+   
+    <div class="reset">
+        <button onclick="reset()">Reset</button>
+    </div>
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+    <script src="script.js"></script>
+    </script>
+
+</body>
+</html>
