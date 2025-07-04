@@ -1,7 +1,7 @@
 ## Goofy-creations
 Regardless of the name, here I include some of the front-end websites I have made that I personally find amusing at my level of skill.
 
-## 1. text-editor.html
+## 1. text-editor
 This is a simple project using HTML, CSS, and a little JavaScript to modify text formatting.
 
 ## 2. Student Management System (Frontend)
